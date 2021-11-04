@@ -9,6 +9,7 @@ public class Ex {
 		System.out.println("===============");
 		ctx.getBean("myBean2", MyBean.class).run();
 		
+		
 		ctx.close();
 	}
 }
