@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+	<bean class="kr.co.codingmonkey.aop6.MyDependency" id="myDependency"></bean>
+	<bean class="">
+		<property name=""></property>
+	</bean>
+	<aop:config>
+	<aop:pointcut expression="executui" id=""/>
+		<aop:aspect ref="pc2">
+			<aop:around method="around" pointcut-ref="pc2"/>
+			<aop:pointcut expression="execution(* good*(..))" id="pc2"/>
+		</aop:aspect>
+	</aop:config>
+</beans>
